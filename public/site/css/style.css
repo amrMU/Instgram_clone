@@ -1,0 +1,25 @@
+.device_iphone{
+}
+.black_devic{
+	/*max-width: 326px;*/
+	max-height: 546px;
+	position: absolute;
+	margin-left: 95px;
+}
+
+.white_iphon{
+	max-height: 616px;
+	position: absolute;
+	left: -8px;
+}
+.entry_door{
+	margin-top: 10%;
+	border-left-style: solid;
+	border-left-width: 2px;
+	border-image-outset: 0;
+	border-image-repeat: stretch;
+	border-image-slice: 100%;
+	border-image-source: none;
+	border-image-width: 1;
+	border-color:#ccc;
+}
