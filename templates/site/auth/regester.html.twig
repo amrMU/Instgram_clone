@@ -10,14 +10,15 @@
 	<div class="container">
 		<div class="row">
 			<!-- start mobile frame -->
-			<div class="col-9">
+			<div class="col-8">
 				<img src="{{asset('site/images/black_iphon.png')}}" class="black_devic">
 				<img src="{{asset('site/images/white_iphon.png')}}" class="white_iphon">
 			</div>
 			<!-- end mobile frame -->
 			<!-- start Login Content -->
-			<div class="col-3 entry_door">
-				<form>
+			<div class="col-4 entry_door">
+				<!-- <form>
+					<h2>Signup</h2>
 					<div class="form-group">
 						<label for="exampleInputEmail1">Email address</label>
 						<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -31,15 +32,21 @@
 						<input type="checkbox" class="form-check-input" id="exampleCheck1">
 						<label class="form-check-label" for="exampleCheck1">remmber me</label>
 					</div>
-					<a href="{{path('register')}}" target="_blank" >Regester Now</button>
 					<button type="submit" class="btn btn-primary">Log In</button>
-				</form>
+				</form> -->
+
+				{{form_start(signUpForm)}}
+				{{form_widget(signUpForm)}}
+
+					<button type="submit" class="btn btn-primary">Sign Up</button>
+
+				{{form_end(signUpForm)}}
 			</div>
 			<!-- end Login Content -->
 		</div>
 	</div>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
