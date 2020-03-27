@@ -4,7 +4,26 @@
     xmlns:srv="http://symfony.com/schema/dic/services"
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
-    <config>
-        <encoder class="App\Entity\Models\Users">bcrypt</encoder>
+	   <!--  <config>
+	        <encoder class="App\Entity\Models\Users">bcrypt</encoder>
+	    </config>
+ -->
+ 	<config>
+        <firewall name="main">
+            <!-- ... -->
+        </firewall>
+
+
+        <!-- require ROLE_ADMIN for /profile* -->
+        <rule path="^/profile" role="ROLE_USER"/>
+
+        <!-- require ROLE_ADMIN or IS_AUTHENTICATED_FULLY for /profile* -->
+       
+
+        <!-- the 'path' value can be any valid regular expression
+             (this one will match URLs like /api/post/7298 and /api/comment/528491) -->
+        <!-- <rule path="^/api/(post|comment)/\d+$" role="ROLE_USER"/> -->
+
     </config>
+
 </srv:container>

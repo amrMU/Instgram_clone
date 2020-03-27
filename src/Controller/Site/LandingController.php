@@ -17,7 +17,10 @@
 	    */
  		public function index()
  		{
- 			return $this->render('site/landing.html.twig',[]);
+ 			return $this->render('site/landing.html.twig',[
+				 'errors'=>[],
+				 'email'=>''
+			 ]);
 
  		}
 
